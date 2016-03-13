@@ -1,0 +1,47 @@
+AncaRebeca\FullCalendarBundle\Model\Event:
+  type: mappedSuperclass
+  fields:
+    title:
+      type: string
+    allDay:
+      type: boolean
+    startDate:
+      type: datetime
+    endDate:
+      type: datetime
+    url:
+      type: string
+      nullable: true
+    className:
+      type: string
+      nullable: true
+    editable:
+      type: boolean
+    startEditable:
+      type: boolean
+    durationEditable:
+      type: boolean
+    rendering:
+      nullable: true
+      type: string
+    overlap:
+      type: boolean
+    constraint:
+      type: integer
+      column: const
+      nullable: true
+    source:
+      nullable: true
+      type: string
+    color:
+      nullable: true
+      type: string
+    backgroundColor:
+      nullable: true
+      type: string
+    textColor:
+      nullable: true
+      type: string
+    customFields:
+      nullable: true
+      type: array
